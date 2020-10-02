@@ -1,7 +1,7 @@
 # aboutMe
-My Personal Website <br/>
+### My Personal Website - Updated October 2020 <br/>
 
-References <br/>
+## References <br/>
 
 [1] W3schools.com. 2020. W3schools Online Web Tutorials. [online] Available at: <https://www.w3schools.com/> [Accessed 2 October 2020].<br/>
 
