@@ -1,0 +1,512 @@
+/*  import google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+/* Style the top navigation bar */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    background-color: #333;
+    background: crimson;
+    width: 100%;
+    padding: 10px 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.navbar .center-nav {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Style the navigation bar links */
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar .active {
+    color: black;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Change color on hover */
+
+#logo {
+    color: #333;
+    font-size: 35px;
+    font-weight: 600px;
+    margin-right: 4%;
+}
+
+#logo span {
+    color: black;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+/* Main Home */
+
+.home {
+    display: flex;
+    background: url("../images/main2f2.jpg") no-repeat center;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+    background-attachment: fixed;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.home .max-width {
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1 {
+    font-size: 27px;
+}
+
+.home .home-content .text-2 {
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+    color: crimson;
+}
+
+.home .home-content .text-3 {
+    font-size: 40px;
+    margin: 5px 0;
+}
+
+/* About Section */
+
+/* Some styles can be applied to many  */
+
+section {
+    padding: 70px 0;
+}
+
+.about, .contact, footer, .project, .academic {
+    font-family: 'Poppins', sans-serif;
+}
+
+.about .title {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid crimson;
+}
+
+.about .about-content, .contact .contact-content, .project .project-content, .academic .academic-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left, .project .project-content .left {
+    width: 45%;
+}
+
+.about .about-content .left img {
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+}
+
+.about .about-content .right, .project .project-content .right {
+    width: 55%;
+}
+
+.about .about-content .right .text, .project .project-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content .right .text span, .project .project-content .right .text span, .academic .academic-content .right .text span {
+    color: crimson;
+}
+.about .about-content .right p{
+    text-align: justify;
+    font-size: 1.25rem;
+}
+.project .project-content .right p,
+.academic .academic .right p {
+    text-align: justify;
+}
+
+.about .about-content .right a {
+    display: inline-block;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 30px;
+    margin-top: 20px;
+    border-radius: 6px;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
+.about .about-content .right a:hover {
+    color: crimson;
+    background-color: aliceblue;
+}
+
+/* Contact Specifics*/
+
+.contact .title, .project .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid crimson;
+}
+
+.contact .contact-content .column {
+    width: calc(50% - 30px);
+}
+
+.contact .contact-content .left .text {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.contact .contact-content .left p {
+    text-align: justify;
+}
+
+.contact .contact-content .left .icons {
+    margin: 10px 0;
+}
+
+.contact .contact-content .row {
+    display: flex;
+    height: 65px;
+    align-items: center;
+}
+
+.contact .contact-content .row .info {
+    margin-left: 30px;
+}
+
+.contact .contact-content .row i {
+    color: crimson;
+    font-size: 35px;
+}
+
+.contact .contact-content .info .head {
+    font-weight: 500;
+}
+
+.contact .contact-content .info .sub-title {
+    color: rgb(202, 196, 196);
+}
+
+/* Form  */
+
+.contact .right form .fields {
+    display: flex;
+}
+
+.contact .right form .fields, .contact .right form .fields .field {
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.contact .right form .textarea {
+    height: 120px;
+    width: 100%;
+}
+
+.contact .right form .fields input, .contact .right form .textarea textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact .right form .textarea textarea {
+    padding-top: 10px;
+    resize: none;
+}
+
+.contact .right form .button {
+    height: 47px;
+    width: 170px;
+    margin-top: 10px;
+}
+
+.contact .right .button button {
+    width: 100%;
+    height: 100%;
+    border: 2px solid crimson;
+    background: crimson;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact .right .button button:hover {
+    background-color: white;
+    color: crimson;
+}
+
+/* Project */
+
+.project {
+    padding-top: 100px;
+}
+
+.project ul {
+    padding-top: 5px;
+}
+
+.project ul li {
+    display: inline;
+}
+
+.project ul li:hover {
+    color: crimson;
+}
+
+.project p {
+    padding-bottom: 1%;
+}
+
+.project .project-content .left img {
+    height: 350px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 3%;
+}
+.project .column  a{
+    color: #b83b5e;
+}
+.dark {
+    background-color: #212121;
+    color: #fff;
+}
+/* Academic  */
+.academic .title{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: 1px solid crimson;
+}
+.academic .title .red{
+    color: crimson;
+}
+.academic {
+    padding-top: 100px;
+}
+.academic .max-width{
+    padding-top: 20px;
+}
+.academic .academic-content .left {
+    width: 30%;
+}
+.academic .academic-content .left img {
+    height: auto;
+    width: 90%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+.academic .academic-content .right {
+    width: 70%;
+}
+.academic .academic-content .right .text {
+    font-size: 25px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.academic .small{
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+}
+.academic ul {
+    padding-top: 5px;
+}
+
+.academic ul li {
+    display: inline;
+}
+.academic .bullet li{
+    display: table;
+}
+.academic ul li:hover {
+    color: crimson;
+}
+.academic ul li a {
+    text-decoration: none;
+    color: inherit;
+}
+.academic .date-text{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-bottom: 2%;
+    color: crimson;
+}
+.academic .date-text i{
+    padding-right: 1.5%;
+}
+
+
+/* Footer  */
+
+footer {
+    background-color: black;
+    padding: 20px 23px;
+    color: #fff;
+    text-align: center;
+}
+
+footer span a {
+    color: crimson;
+    text-decoration: none;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1300px) {
+    .home .max-width {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .about .about-content {
+        flex-direction: column;
+    }
+    .about .about-content .right {
+        width: auto;
+    }
+    .about .about-content .left {
+        width: auto;
+    }
+    .project .project-content {
+        flex-direction: column;
+    }
+    .project .project-content .right {
+        width: auto;
+    }
+    .project .project-content .left {
+        width: 100%;
+    }
+    .project .project-content img {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    .project .project-content .left iframe {
+        width: 100%;
+    }
+    .academic .academic-content {
+        flex-direction: column;
+    }
+    /* hide logo after limit  */
+    .academic .academic-content .left{
+        display: none;
+    }
+}
+
+@media (max-width: 947px) {
+    .contact .contact-content .column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .home .home-content .text-2 {
+        font-size: 70px;
+    }
+    .home .home-content .text-3 {
+        font-size: 35px;
+    }
+    .home .home-content a {
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    .max-width {
+        max-width: 930px;
+    }
+}
+
+/* I want to adjust the navbar to be stacked and not fixed anymore */
+
+@media (max-width: 700px) {
+    .navbar {
+        position: relative;
+    }
+    .navbar .center-nav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .home .home-content .text-2 {
+        font-size: 60px;
+    }
+    .home .home-content .text-3 {
+        font-size: 32px;
+    }
+    .home .home-content a {
+        font-size: 20px;
+    }
+    .services .serv-content .card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .home .home-content .text-2 {
+        font-size: 50px;
+    }
+    .home .home-content .text-3 {
+        font-size: 27px;
+    }
+}
