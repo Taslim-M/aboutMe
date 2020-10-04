@@ -55,7 +55,7 @@
 /* Change color on hover */
 
 #logo {
-    color: #333;
+    color: rgb(205, 205, 218);
     font-size: 35px;
     font-weight: 600px;
     margin-right: 4%;
@@ -376,6 +376,7 @@ section {
 }
 .academic .bullet li{
     display: table;
+    line-height: 1.9;
 }
 .academic ul li:hover {
     color: crimson;
